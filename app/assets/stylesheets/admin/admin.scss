@@ -1,0 +1,71 @@
+li.current:not(.has_nested) {
+  background-color: #e4e3e3;
+}
+
+ul.menu {
+  padding: 0px !important;
+}
+
+.footer {
+  text-align: center;
+}
+
+.col-actions {
+  text-align: right;
+}
+
+.sidebar_section {
+  .input {
+    select {
+      height: 34px !important;
+      width: 49% !important;
+    }
+
+    input {
+      height: 34px !important;
+      width: 49% !important;
+    }
+  }
+}
+
+.thumb {
+  width: 100px;
+  padding-bottom: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+
+  &.selected {
+    opacity: 0.2;
+  }
+}
+
+.icon {
+  width: 50px;
+}
+
+.mini-thumb {
+  width: 50px;
+  height: 50px;
+}
+
+.fullsize {
+  width: 400px;
+  height: 400px;
+  padding: 1px;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+}
+
+.scope a {
+  margin-right: 0px !important;
+}
+
+.image_center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}

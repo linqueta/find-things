@@ -1,0 +1,86 @@
+pt-BR:
+  activerecord:
+    models:
+      operation:
+        one: Operação
+        other: Operações
+      city:
+        one: Cidade
+        other: Cidades
+      neighborhood:
+        one: Bairro
+        other: Bairros
+      address:
+        one: Endereço
+        other: Endereços
+      property:
+        one: Imóvel
+        other: Imóveis
+      page:
+        one: Página
+        other: Páginas
+      integration:
+        one: Integração
+        other: Integrações
+    attributes:
+      commons: &commons
+        name: Nome
+        lat: Latitude
+        lng: Longitude
+        map: Mapa
+        created_at: Criação
+        updated_at: Edição
+      page:
+        <<: *commons
+        icon: Ícone
+        phone: Telefone
+        url: Site
+      operation:
+        <<: *commons
+      city:
+        <<: *commons
+      neighborhood:
+        <<: *commons
+        city: Cidade
+        uf: Estado
+        favorite: 'Favorito'
+      address:
+        <<: *commons
+        zip_code: CEP
+        street: Rua/Av
+      property:
+        <<: *commons
+        title: Título
+        bedrooms: Quartos
+        description: Descrição
+        suite: Suítes
+        bathrooms: Banheiros
+        parking_spaces: Vagas de garagem
+        square_meters: Área
+        images: Fotos
+        last_value: Antigo Valor
+        value: Valor
+        condominium: Condomínio
+        tax: IPTU
+        total: Total
+        external_id: Código
+        url: URL
+        checked_at: Visto
+        refreshed_at: Atualizado
+        phones: Telefones
+        favorite: Favorito
+        operation: Operação
+        address: Endereço
+        neighborhood: Bairro
+        city: Cidade
+        page: Página
+      integration:
+        <<: *commons
+        max_pages: Máximo de paginação
+        page: Página
+    errors:
+      messages:
+        record_invalid: "A validação falhou: %{errors}"
+        restrict_dependent_destroy:
+          has_one: Não é possível excluir o registro pois existe um %{record} dependente
+          has_many: Não é possível excluir o registro pois existem %{record} dependentes
